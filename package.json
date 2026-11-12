@@ -1,0 +1,18 @@
+{
+  "name": "ai-support-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Motor tradicional y generativo de clasificación de solicitudes de soporte con Groq.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test:traditional": "node tests/traditional.test.js",
+    "compare": "node scripts/compare.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
